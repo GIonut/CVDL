@@ -45,3 +45,6 @@ The model was evaluated with `sklearn.metrics` methods, `classification_report` 
 
 the `poly` and `rbf` SVM classifiers were producing a slightly more poor score.  
 
+### More work
+Looking at the result, I have a hinch that the model is overfitting, so I will try to use Kfold fo separating data, get the mean error and plot the results of multiple models and try to overcome overfitting, if it figures out that my hinch is actually what is happening.
+
