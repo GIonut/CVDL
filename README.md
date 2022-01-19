@@ -46,7 +46,24 @@ The model was evaluated with `sklearn.metrics` methods, `classification_report` 
 
 the `poly` and `rbf` SVM classifiers were producing a slightly more poor score.  
 
-### More work
-Looking at the result, I have a hinch that the model is overfitting, so I will try to use Kfold fo separating data, get the mean error and plot the results of multiple models and try to overcome overfitting, if it figures out that my hinch is actually what is happening.
+### Optimizing
+KFolds algorithm was used to split training and testing data into 4 groups. Further, by computing the MAE of each fold and plotting the result, we can observe how well the model used for predicting is performing.
++ KNeighbours Classifier:
 
+![KNeighbours](https://github.com/GIonut/CVDL/blob/master/assets/KNeighbours.png)
 
++ GaussianNB Classifier  
+
+![GaussianNB](https://github.com/GIonut/CVDL/blob/master/assets/download.png)
+
++ Using PCA to reduce the number of features
+
+![PCA](https://github.com/GIonut/CVDL/blob/master/assets/PCA.png)
+
++ Using MinMaxScaler to map feature values to [0..1]
+
+![MinMaxScaler](https://github.com/GIonut/CVDL/blob/master/assets/MapTo0_1.png)
+
++ Best Obtained Model:
+
+![Best](https://github.com/GIonut/CVDL/blob/master/assets/BestModel.png)
