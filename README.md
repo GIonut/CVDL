@@ -67,3 +67,6 @@ KFolds algorithm was used to split training and testing data into 4 groups. Furt
 + Best Obtained Model:
 
 ![Best](https://github.com/GIonut/CVDL/blob/master/assets/BestModel.png)
+
+## Conclusion
+In the evaluation process, some features seem to wheight more than others. For example, The features representing the partial grades, G1 and G2 have the greatest impact over the final prediction, which is expected. More interesting, the `Daily Alcohol Level` or the `parents job status` also have an impact over the prediction, and in the experiments, this impact was able to reach the value of 2 (on a scale from 0 to 20). In this regard, future works can examine which are the best combinations of features for which a feature has the maximum impact over the final prediction and why.   
